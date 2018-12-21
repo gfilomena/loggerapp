@@ -1,4 +1,3 @@
-'use strict'
 var dns = require('dns');
 var express = require('express');
 var bodyParser = require('body-parser');

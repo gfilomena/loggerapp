@@ -20,6 +20,8 @@ npm install http-server(optional)
 
 ### Installing
 
+Go in the rott folder and run: node server.js 
+
 Go in the dist folder and run: http-server
 
 ## Authors
