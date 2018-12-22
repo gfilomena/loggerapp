@@ -10,13 +10,14 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors());
 
+app.use(express.static(__dirname + '/dist'));
 
 
+// Catch all other routes and return the index file
+  app.get('/*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'dist/index.html'));
+});
 
-app.get('/', function (req, res) {
-
-   res.status(200).json({ status:'webservice is ready' });
-})
 
 app.post('/dnslookups', function (req, res) {
   console.log('arr ip: ',req.body);
