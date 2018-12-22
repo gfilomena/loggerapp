@@ -50,11 +50,6 @@ const server = app.listen(port, function(){
 });
 
 
-//reverseLookup('213.46.228.196');
-//reverseLookup('83.150.38.202');
-//reverseLookup('172.217.7.163');
-
-
 function reverseLookup(ip) {
    return new Promise((resolve, reject) => {
       dns.reverse(ip,function(err,domains){

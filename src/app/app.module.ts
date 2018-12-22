@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { LogService } from '../service/log.service';
 import { HttpClientModule }    from '@angular/common/http';
-import { ParserComponent } from '../parser/parser.component';
+
 
 
 @NgModule({
@@ -21,7 +21,7 @@ import { ParserComponent } from '../parser/parser.component';
     HttpClientModule,
     MaterialModule
 ],
-  declarations: [ AppComponent, ParserComponent ],
+  declarations: [ AppComponent ],
   providers: [ LogService ],
   bootstrap:    [ AppComponent ]
 })

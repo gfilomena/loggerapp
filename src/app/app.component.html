@@ -1,9 +1,44 @@
-
-
 <mat-toolbar color="primary">
   <mat-toolbar-row>
     <span>Logger</span>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<app-parser></app-parser>
+
+<div class="dashboard">
+  <input id="file-upload" 
+  type="file" 
+  accept=".log" 
+  (change)="fileUpload($event)">
+  <button mat-raised-button color="primary" (click)="loadlocalfile()">Load local file</button>
+</div>
+
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+  <!-- CLient IP Column -->
+  <ng-container matColumnDef="c_ip">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Client IP </th>
+    <td mat-cell *matCellDef="let element"> {{element.c_ip}} </td>
+  </ng-container>
+
+  <!-- FQDN Column -->
+  <ng-container matColumnDef="fqdn">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> FQDN </th>
+      <td mat-cell *matCellDef="let element"> {{element.fqdn}}  </td>
+  </ng-container>
+
+  <!-- Calls Client IP Counter  Column -->
+  <ng-container matColumnDef="counter">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header> Calls for Client IP </th>
+      <td mat-cell *matCellDef="let element"> {{element.counter}}</td>
+  </ng-container>    
+
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+
+
+
+

@@ -8,12 +8,13 @@ import { environment } from '../environments/environment';
 })
 export class LogService {
 
-  uri: String = environment.serviceUrl;
+  uri: string = environment.serviceUrl;
+  logpath: string = '/assets/IISLog.log';
 
   constructor(private http: HttpClient) { }
 
   getLog() {
-    return this.http.get('/assets/IISLog.log', { responseType: 'text' });
+    return this.http.get(this.logpath, { responseType: 'text' });
   }
 
   getFqdn(data) {
