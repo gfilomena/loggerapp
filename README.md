@@ -8,17 +8,11 @@ This tool allow to parse an IIS log file and retrieve and display valid Client I
 
 STACK used: NodeJs, Angular 7, ExpressJs
 
-npm install express --save
-
-npm install cors --save
-
-npm install dns --save
-
-npm install body-parser --save
-
 ### Run Application
 
-Go in the dist folder and run: node server.js , then go to http://localhost:4000
+1) Go in the root and run: ng build
+
+2) Go in the dist folder and run: node server.js , then go to http://localhost:4000
 
 ## Authors
 
