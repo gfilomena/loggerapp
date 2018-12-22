@@ -16,13 +16,9 @@ npm install dns --save
 
 npm install body-parser --save
 
-npm install http-server(optional)
+### Run Application
 
-### Installing
-
-Go in the rott folder and run: node server.js 
-
-Go in the dist folder and run: http-server
+Go in the dist folder and run: node server.js , then go to http://localhost:4000
 
 ## Authors
 

@@ -15,7 +15,7 @@ app.use(express.static(__dirname + '/dist'));
 
 
 app.post('/dnslookups', function (req, res) {
-  console.log('arr ip: ',req.body);
+  //console.log('arr ip: ',req.body);
   var arr = req.body;
 
 if(arr != undefined) {
@@ -56,12 +56,12 @@ function reverseLookup(ip) {
         if(err==null)	{
           domains.forEach(function(domain){
             dns.lookup(domain,function(err, address, family){
-              console.log('domain',domain)
+              //console.log('domain',domain)
               resolve(domain)
             });
           });
         }else{
-          console.log('err.hostname',err.hostname)
+          //console.log('err.hostname',err.hostname)
           resolve(err.hostname)
         }
       });
