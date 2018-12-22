@@ -4,9 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { NgForm, ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { LogService } from '../log.service';
+import { LogService } from '../service/log.service';
 import { HttpClientModule }    from '@angular/common/http';
 import { ParserComponent } from '../parser/parser.component';
 

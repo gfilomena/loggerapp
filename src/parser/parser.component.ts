@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { LogService } from '../log.service';
+import { LogService } from '../service/log.service';
 import { MatSort, MatTableDataSource } from '@angular/material';
 
 
