@@ -1,6 +1,9 @@
 {
   "name": "loggerapp",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Loggerapp show logging details",
+  "author": "Giuseppe Filomena <salsx@hotmail.it>",
+  "license": "MIT",
   "private": true,
   "dependencies": {
     "@angular/animations": ">=7.0.0",
@@ -29,8 +32,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "e2e": "ng e2e"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
